@@ -3,7 +3,7 @@ class Tower {
     var options = {
       isStatic: true
     };
-    this.ballImage = loadImage("assets/tower-04.png");
+    this.image = loadImage("assets/tower.png");
     this.width = width;
     this.height = height;
     this.body = Bodies.rectangle(x, y, this.width, this.height, options);
@@ -16,7 +16,7 @@ class Tower {
     translate(pos.x, pos.y);
     rotate(angle);
     imageMode(CENTER);
-    image(this.ballImage, 0, 0, this.width, this.height);
+    image(this.image, 0, 0, this.width, this.height);
     pop();
   }
 }
